@@ -1,4 +1,4 @@
-package simpletest;
+package uk.co.crescentworks.string;
 
 
 
