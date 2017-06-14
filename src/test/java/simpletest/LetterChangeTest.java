@@ -32,12 +32,4 @@ public class LetterChangeTest {
         assertEquals("We didn't get the right value", outputString, actualOutput);
     }
 
-    @Test
-    public void testLetterWrapAround() {
-        String inputString = "z";
-//        String outputString = "a";
-        String outputString = "A";
-        String actualOutput = LetterChange.letterChanges(inputString);
-        assertEquals("Wrap around incorrect", outputString, actualOutput);
-    }
 }
