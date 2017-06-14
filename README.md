@@ -3,7 +3,8 @@ A java exercise for work experience
 
 This is a java project using maven to build and manage dependencies.
 
-Assuming maven is correctly installed, the project can be built using
+Assuming maven is correctly installed, and the project root directory is cwd,
+the project can be built using
 
     mvn install
 
