@@ -35,3 +35,8 @@ letters should be rotated only, in others no rotation should be done but vowels
 should be capitalised, and finally, in others the function should remain as is.
 What changes would you make to the LetterChange and what changes to the
 LetterChangeTest classes?
+
+5 - How do the method(s) handle null or empty input strings?  If necessary make
+changes to ensure that a null or empty input returns an empty string rather
+than resulting in an exception.  Ensure that tests cover this scenario wherever
+appropriate.
