@@ -32,4 +32,61 @@ public class LetterChangeTest {
         assertEquals("We didn't get the right value", outputString, actualOutput);
     }
 
+    @Test
+    public void testLetterChangesz_A(){
+        String inputString = "zzzzzz";
+        String outputString = "AAAAAA";
+        String actualOutput = LetterChange.letterChanges(inputString);
+        assertEquals("We didn't get the right value", outputString, actualOutput);
+    }
+
+    @Test
+    public void testLetterChangesZ_A(){
+        String inputString = "ZZZZZZ";
+        String outputString = "AAAAAA";
+        String actualOutput = LetterChange.letterChanges(inputString);
+        assertEquals("We didn't get the right value", outputString, actualOutput);
+    }
+
+    @Test
+    public void testVowelCapital(){
+        String inputString = "abcdefghijklmnopqrstuvwxyz";
+        String outputString = "AbcdEfghIjklmnOpqrstUvwxyz";
+        String actualOutput = LetterChange.vowelCapital(inputString);
+        assertEquals("We didn't get the right value", outputString, actualOutput);
+    }
+
+    @Test
+    public void testNextLetter(){
+        String inputString = "abcdefghijklmnopqrstuvwxyz";
+        String outputString = "bcdefghijklmnopqrstuvwxyzA";
+        String actualOutput = LetterChange.nextLetter(inputString);
+        assertEquals("We didn't get the right value", outputString, actualOutput);
+    }
+
+    @Test
+    public void testNextLetterz_a(){
+        String inputString = "Zz";
+        String outputString = "aA";
+        String actualOutput = LetterChange.nextLetter(inputString);
+        assertEquals("We didn't get the right value", outputString, actualOutput);
+    }
+
+    @Test
+    public void testNullInputLetterChanges(){
+        String inputString = null;
+        String outputString = "";
+        String actualOutput = LetterChange.letterChanges(inputString);
+        assertEquals("We didn't get the right value", outputString, actualOutput);
+    }
+
+    @Test
+    public void testNullInputNextLetter(){
+        String inputString = null;
+        String outputString = "";
+        String actualOutput = LetterChange.nextLetter(inputString);
+        assertEquals("We didn't get the right value", outputString, actualOutput);
+    }
+
+
 }
